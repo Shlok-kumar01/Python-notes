@@ -33,6 +33,21 @@ print(a["Marks"]) # Output: 100
 
 >**NOTE:**  
 >  Keys must be unique.
+
+## What if I create duplicate keys
+- Python does not raise an error.
+- If same key appear multiple times the last value overwrite the previous value.
+```python
+student = {
+	"name" : "Shlok",
+	"age" : 20,
+	"name" : "Rahul"
+}
+
+print(student)
+# Output: {'name': 'Rahul', 'age': 20}
+```
+
 ---
 # Dictionary Methods
 - Some commonly used dictionary methods are:
@@ -101,8 +116,11 @@ a = {
 }
 
 b = a.pop("Name")
+
 print(b) # Output: Shlok
-print(a) # Output: {'key': 'value', 'Subject': 'Python', 'Marks': 100}
+
+print(a) 
+# Output: {'key': 'value', 'Subject': 'Python', 'Marks': 100}
 ```
 ## 5. get()
 - `get()` method returns the value of the specified keys.
@@ -128,7 +146,8 @@ a = {
     "Marks": 100
 }
 
-print(a.values()) # Output: dict_values(['Shlok', 100])
+print(a.values()) 
+# Output: dict_values(['Shlok', 100])
 ```
 ---
 # dict[key] vs dict.get(key)

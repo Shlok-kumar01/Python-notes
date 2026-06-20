@@ -88,6 +88,7 @@ print(len(a)) # Output: 6
 ```python
 a = {7,5,3,4,9,2}
 a.remove(3)
+
 print(a) # Output: {2, 4, 5, 7, 9}
 ```
 
@@ -97,6 +98,7 @@ print(a) # Output: {2, 4, 5, 7, 9}
 ```python
 a = {7,5,3,4,9,2}
 b = a.pop()
+
 print(b) # Output: suppose it remove element 2
 print(a) # Output: {7, 5, 3, 4, 9}
 ```
@@ -108,6 +110,7 @@ print(a) # Output: {7, 5, 3, 4, 9}
 ```python
 a = {7,5,3,4,9,2}
 a.clear()
+
 print(a) # Output: set()
 ```
 
@@ -119,7 +122,8 @@ a = {1,2,3,4,3,5,4}
 b = {6,7,3,6,4,8,9,2}
 
 c = a.union(b)
-print(c) # Output: {1, 2, 3, 4, 5, 6, 7, 8, 9}
+print(c) 
+# Output: {1, 2, 3, 4, 5, 6, 7, 8, 9}
 ```
 
 ## 6. intersection()
@@ -144,3 +148,12 @@ c = a.difference(b)
 print(c) # Output: {1, 5}
 ```
 
+# Remember: 
+
+```python
+[]  --> List
+()  --> Tuple
+{}  --> Dictionary (if key:value pairs exist)
+set() --> Empty Set
+{1, 2, 3} --> Set
+```
