@@ -37,6 +37,7 @@ print(a["Marks"]) # Output: 100
 ## What if I create duplicate keys
 - Python does not raise an error.
 - If same key appear multiple times the last value overwrite the previous value.
+### Example: 
 ```python
 student = {
 	"name" : "Shlok",
